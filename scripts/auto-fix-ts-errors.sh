@@ -8,7 +8,7 @@ set -e
 echo "🔧 Starting TypeScript Error Auto-Fix..."
 echo ""
 
-ERROR_COUNT_BEFORE=$(npm run typecheck 2>&1 | grep -c "error TS" || echo "0")
+ERROR_COUNT_BEFORE=$(pnpm typecheck 2>&1 | grep -c "error TS" || echo "0")
 echo "📊 Initial error count: $ERROR_COUNT_BEFORE"
 echo ""
 
@@ -37,7 +37,7 @@ echo ""
 echo "✅ Auto-fix completed!"
 echo ""
 
-ERROR_COUNT_AFTER=$(npm run typecheck 2>&1 | grep -c "error TS" || echo "0")
+ERROR_COUNT_AFTER=$(pnpm typecheck 2>&1 | grep -c "error TS" || echo "0")
 echo "📊 Final error count: $ERROR_COUNT_AFTER"
 echo "📈 Errors fixed: $((ERROR_COUNT_BEFORE - ERROR_COUNT_AFTER))"
 echo ""

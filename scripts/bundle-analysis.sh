@@ -18,7 +18,7 @@ mkdir -p "$REPORT_DIR"
 
 # Check if dist directory exists
 if [ ! -d "$DIST_DIR" ]; then
-  echo "❌ Error: $DIST_DIR directory not found. Run 'npm run build' first."
+  echo "❌ Error: $DIST_DIR directory not found. Run 'pnpm build' first."
   exit 1
 fi
 

@@ -16,7 +16,7 @@ URL=${1:-"http://localhost:3200"}
 
 if ! curl -s "$URL" > /dev/null 2>&1; then
     echo "❌ Server not running at $URL"
-    echo "Please start the dev server first: npm run dev"
+    echo "Please start the dev server first: pnpm dev"
     exit 1
 fi
 
@@ -221,7 +221,7 @@ echo "✅ Report generated: ${OUTPUT_DIR}/pwa-audit-${TIMESTAMP}.md"
 
 echo ""
 echo "🧪 Running PWA Tests..."
-npm run pwa:ci 2>/dev/null || npm run pwa
+pnpm pwa:ci 2>/dev/null || pnpm pwa
 
 echo ""
 echo "=== Quick Summary ==="

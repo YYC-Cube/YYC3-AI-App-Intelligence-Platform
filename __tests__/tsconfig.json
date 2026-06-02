@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "types": ["jest", "@testing-library/jest-dom", "node"]
+  },
+  "include": ["../__tests__/**/*", "../vite-env.d.ts", "../types/**/*"],
+  "exclude": ["node_modules", "../node_modules"]
+}

@@ -65,7 +65,9 @@ describe('useLocalStorage Hook', () => {
     });
 
     it('应该将值持久化到localStorage', () => {
-      const { result } = renderHook(() => useLocalStorage(testKey, null));
+      const { result } = renderHook(() =>
+        useLocalStorage<Record<string, string> | null>(testKey, null)
+      );
 
       act(() => {
         result.current[1]({ key: 'value' });

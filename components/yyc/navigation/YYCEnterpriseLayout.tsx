@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { BarChart3, Bell, ChevronRight, Edit3, Menu, Search, Sparkles, Trash2 } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import { createElement, useEffect, useState } from 'react';
 import { useResponsive } from '../../../hooks/useResponsive';
 import { YYCLogo } from '../../YYCLogo';
 import { level4Actions, yycNavigationConfig } from './nav-config';
@@ -143,7 +143,7 @@ export function YYCEnterpriseLayout() {
                   当前模块
                 </div>
                 <div className="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-lg">
-                  {React.createElement(currentL1.icon, { className: 'w-5 h-5 text-slate-500' })}
+                  {createElement(currentL1.icon, { className: 'w-5 h-5 text-slate-500' })}
                   {currentL1.label}
                 </div>
                 <p className="text-xs text-slate-500 mt-1 line-clamp-2">{currentL1.description}</p>

@@ -20,7 +20,7 @@ mkdir -p "$OUTPUT_DIR"
 # Check if server is running
 if ! curl -s "$BASE_URL" > /dev/null 2>&1; then
     echo "❌ Server not running at $BASE_URL"
-    echo "Please start the dev server first: npm run dev"
+    echo "Please start the dev server first: pnpm dev"
     exit 1
 fi
 

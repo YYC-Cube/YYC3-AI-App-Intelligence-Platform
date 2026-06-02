@@ -1,3 +1,6 @@
+/// <reference types="vite/client" />
+/// <reference types="vite-plugin-pwa/client" />
+
 declare module 'virtual:pwa-register' {
   export interface RegisterSWOptions {
     immediate?: boolean;
@@ -12,6 +15,11 @@ declare module 'virtual:pwa-register' {
 
   export type RegisterSW = (options?: RegisterSWOptions) => (reloadPage?: boolean) => Promise<void>;
 
-  const registerSW: RegisterSW;
+  export const registerSW: RegisterSW;
   export default registerSW;
+}
+
+declare module 'figma:asset/*' {
+  const src: string;
+  export default src;
 }

@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { PerformanceMonitor } from '../../components/PerformanceMonitor';
 
@@ -5,10 +6,28 @@ describe('PerformanceMonitor Component', () => {
   beforeEach(() => {
     jest.clearAllMocks();
 
-    global.PerformanceObserver = jest.fn().mockImplementation(() => ({
+    const MockObserver = jest.fn().mockImplementation(() => ({
       observe: jest.fn(),
       disconnect: jest.fn(),
-    }));
+    })) as unknown as typeof PerformanceObserver;
+    Object.defineProperty(MockObserver, 'supportedEntryTypes', {
+      value: [
+        'element',
+        'event',
+        'first-input',
+        'largest-contentful-paint',
+        'layout-shift',
+        'longtask',
+        'mark',
+        'measure',
+        'navigation',
+        'paint',
+        'resource',
+      ],
+      writable: false,
+      configurable: true,
+    });
+    global.PerformanceObserver = MockObserver;
   });
 
   test('renders toggle button when disabled', () => {

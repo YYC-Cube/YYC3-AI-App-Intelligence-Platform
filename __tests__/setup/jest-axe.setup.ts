@@ -1,3 +1,3 @@
 import toHaveNoViolations from 'jest-axe';
 
-expect.extend(toHaveNoViolations);
+expect.extend(toHaveNoViolations as never);

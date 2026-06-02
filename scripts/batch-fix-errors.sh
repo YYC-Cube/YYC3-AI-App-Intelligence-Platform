@@ -13,7 +13,7 @@ find . -name "*.tsx" -type f ! -path "./node_modules/*" -exec grep -l "import Re
 done
 
 # 2. 统计修复结果
-ERRORS_BEFORE=$(npm run typecheck 2>&1 | grep -c "error TS" || echo "0")
+ERRORS_BEFORE=$(pnpm typecheck 2>&1 | grep -c "error TS" || echo "0")
 echo ""
 echo "📊 修复前错误数: $ERRORS_BEFORE"
 

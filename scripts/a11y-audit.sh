@@ -17,7 +17,7 @@ URL=${1:-"http://localhost:3200"}
 
 if ! curl -s "$URL" > /dev/null 2>&1; then
     echo "❌ Server not running at $URL"
-    echo "Please start the dev server first: npm run dev"
+    echo "Please start the dev server first: pnpm dev"
     exit 1
 fi
 
@@ -29,7 +29,7 @@ npx axe "$URL" --save 2>/dev/null || echo "⚠️ axe CLI not available, using a
 
 echo ""
 echo "🧪 Running accessibility tests..."
-npm run a11y:ci 2>/dev/null || npm run a11y
+pnpm a11y:ci 2>/dev/null || pnpm a11y
 
 echo ""
 echo "📈 Generating summary..."

@@ -4,19 +4,19 @@ import { useTabs } from '../../hooks/useTabs';
 describe('useTabs Hook', () => {
   describe('初始状态', () => {
     it('应该正确设置初始Tab', () => {
-      const { result } = renderHook(() => useTabs('home'));
+      const { result } = renderHook(() => useTabs<string>('home'));
       expect(result.current.activeTab).toBe('home');
     });
 
     it('应该支持字符串类型的Tab ID', () => {
-      const { result } = renderHook(() => useTabs('settings'));
+      const { result } = renderHook(() => useTabs<string>('settings'));
       expect(result.current.activeTab).toBe('settings');
     });
   });
 
   describe('setActiveTab 函数', () => {
     it('应该能够切换到新的Tab', () => {
-      const { result } = renderHook(() => useTabs('home'));
+      const { result } = renderHook(() => useTabs<string>('home'));
 
       act(() => {
         result.current.setActiveTab('profile');
@@ -25,7 +25,7 @@ describe('useTabs Hook', () => {
     });
 
     it('应该支持多次切换', () => {
-      const { result } = renderHook(() => useTabs('tab1'));
+      const { result } = renderHook(() => useTabs<string>('tab1'));
 
       act(() => {
         result.current.setActiveTab('tab2');
@@ -39,17 +39,17 @@ describe('useTabs Hook', () => {
 
   describe('isActive 函数', () => {
     it('当前激活的Tab应该返回 true', () => {
-      const { result } = renderHook(() => useTabs('home'));
+      const { result } = renderHook(() => useTabs<string>('home'));
       expect(result.current.isActive('home')).toBe(true);
     });
 
     it('非激活的Tab应该返回 false', () => {
-      const { result } = renderHook(() => useTabs('home'));
+      const { result } = renderHook(() => useTabs<string>('home'));
       expect(result.current.isActive('profile')).toBe(false);
     });
 
     it('切换后应该更新 isActive 状态', () => {
-      const { result } = renderHook(() => useTabs('home'));
+      const { result } = renderHook(() => useTabs<string>('home'));
 
       expect(result.current.isActive('home')).toBe(true);
 

@@ -1,8 +1,9 @@
-import React, { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
+import type { ReactNode } from 'react';
 
 interface LazyLoadProps {
-  children: React.ReactNode;
-  fallback?: React.ReactNode;
+  children: ReactNode;
+  fallback?: ReactNode;
 }
 
 export function LazyLoad({
@@ -17,19 +18,19 @@ export function LazyLoad({
   return <Suspense fallback={fallback}>{children}</Suspense>;
 }
 
-export const HomeMode = React.lazy(() =>
+export const HomeMode = lazy(() =>
   import('../components/nara/HomeMode').then((mod) => ({ default: mod.HomeMode }))
 );
 
-export const ChatMode = React.lazy(() =>
+export const ChatMode = lazy(() =>
   import('../components/nara/ChatMode').then((mod) => ({ default: mod.ChatMode }))
 );
 
-export const LoopMode = React.lazy(() =>
+export const LoopMode = lazy(() =>
   import('../components/nara/LoopMode').then((mod) => ({ default: mod.LoopMode }))
 );
 
-export const YYCEnterpriseLayout = React.lazy(() =>
+export const YYCEnterpriseLayout = lazy(() =>
   import('../components/yyc/navigation/YYCEnterpriseLayout').then((mod) => ({
     default: mod.YYCEnterpriseLayout,
   }))

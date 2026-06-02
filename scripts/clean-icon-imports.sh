@@ -8,7 +8,7 @@ set -e
 echo "🧹 Cleaning unused icon imports..."
 
 # Get all files with unused icon errors
-FILES=$(npm run typecheck 2>&1 | grep "is declared but its value is never read" | grep -E "'(Users|Zap|Settings|AlertTriangle|TrendingUp|Star|Progress|Clock|Trash2|Target)'" | sed 's/(.*//' | sort -u)
+FILES=$(pnpm typecheck 2>&1 | grep "is declared but its value is never read" | grep -E "'(Users|Zap|Settings|AlertTriangle|TrendingUp|Star|Progress|Clock|Trash2|Target)'" | sed 's/(.*//' | sort -u)
 
 for file in $FILES; do
     if [ ! -f "$file" ]; then
@@ -16,7 +16,7 @@ for file in $FILES; do
     fi
 
     # Get unused icons for this file
-    UNUSED_ICONS=$(npm run typecheck 2>&1 | grep "$file.*is declared but its value is never read" | grep -oE "'[A-Z][a-z]+'" | tr -d "'" | sort -u)
+    UNUSED_ICONS=$(pnpm typecheck 2>&1 | grep "$file.*is declared but its value is never read" | grep -oE "'[A-Z][a-z]+'" | tr -d "'" | sort -u)
 
     if [ -z "$UNUSED_ICONS" ]; then
         continue

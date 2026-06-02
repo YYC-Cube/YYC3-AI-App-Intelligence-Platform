@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import registerSW from 'virtual:pwa-register';
+import { registerSW } from 'virtual:pwa-register';
 import { logger } from '../utils/logger';
 
 export interface PWAState {

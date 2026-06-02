@@ -1,4 +1,3 @@
-// @ts-expect-error figma asset import
 import karbonLogoWhite from 'figma:asset/8cea1a267cd31dbfc8ab290dd155e3aaf5db0a96.png';
 
 interface LogoProps {

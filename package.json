@@ -34,7 +34,7 @@
     "a11y:axe": "npx axe http://localhost:3200 --save",
     "pwa": "jest --testPathPatterns=\"pwa\" --verbose",
     "pwa:ci": "jest --testPathPatterns=\"pwa\" --ci --coverage --reporters=default --reporters=jest-junit",
-    "pwa:build": "npm run build && npm run preview"
+    "pwa:build": "pnpm build && pnpm preview"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -123,8 +123,9 @@
   },
   "engines": {
     "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "pnpm": ">=9.0.0"
   },
+  "packageManager": "pnpm@9.15.0",
   "keywords": [
     "ai",
     "analytics",

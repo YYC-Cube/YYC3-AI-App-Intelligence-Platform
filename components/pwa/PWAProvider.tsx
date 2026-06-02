@@ -1,8 +1,8 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import { usePWA } from '../../hooks/usePWA';
 
 interface PWAProviderProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function PWAProvider({ children }: PWAProviderProps) {
