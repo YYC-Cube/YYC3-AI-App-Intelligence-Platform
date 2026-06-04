@@ -22,7 +22,7 @@ module.exports = {
     '!src/vite-env.d.ts',
   ],
   coverageDirectory: 'coverage',
-  coverageReporters: ['text', 'lcov', 'html'],
+  coverageReporters: ['text', 'lcov', 'html', 'json-summary'],
   verbose: true,
   testTimeout: 10000,
 };
