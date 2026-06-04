@@ -2,6 +2,9 @@
   "ci": {
     "collect": {
       "numberOfRuns": 3,
+      "startServerCommand": "pnpm preview",
+      "startServerReadyPattern": "Local",
+      "url": ["http://localhost:3200/"],
       "settings": {
         "chromeFlags": "--no-sandbox",
         "maxWaitForLoad": 45000,
@@ -46,7 +49,6 @@
         "speed-index": ["warn", { "maxNumericValue": 3400, "aggregationMethod": "optimistic" }],
         "interactive": ["warn", { "maxNumericValue": 3800, "aggregationMethod": "optimistic" }]
       }
-    },
-    "serverUrl": null
+    }
   }
 }

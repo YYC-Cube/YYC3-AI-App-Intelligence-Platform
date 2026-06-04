@@ -136,6 +136,10 @@ export default defineConfig({
     host: true,
     open: true,
   },
+  preview: {
+    port: 3200,
+    host: true,
+  },
   build: {
     outDir: 'dist',
     sourcemap: true,
