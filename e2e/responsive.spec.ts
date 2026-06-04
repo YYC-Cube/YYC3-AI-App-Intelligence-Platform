@@ -132,9 +132,7 @@ test.describe('响应式设计 - Responsive Design', () => {
 
     const desktopFontSize = await titleH1.evaluate((el) => window.getComputedStyle(el).fontSize);
 
-    // eslint-disable-next-line no-console
     console.log(`📱 移动端字体大小: ${mobileFontSize}`);
-    // eslint-disable-next-line no-console
     console.log(`🖥️ 桌面端字体大小: ${desktopFontSize}`);
 
     const mobileSize = parseFloat(mobileFontSize);

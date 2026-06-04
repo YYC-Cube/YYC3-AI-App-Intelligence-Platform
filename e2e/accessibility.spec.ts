@@ -78,7 +78,6 @@ test.describe('可访问性基础 - Accessibility Basics', () => {
       if (isFocused) {
         focusedCount++;
         const tag = await focusedElement.evaluate((el) => el.tagName);
-        // eslint-disable-next-line no-console
         console.log(`✅ 焦点元素 #${focusedCount}: <${tag}>`);
       }
     }

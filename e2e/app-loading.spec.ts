@@ -21,7 +21,6 @@ test.describe('应用加载 - Application Loading', () => {
 
     expect(loadTime).toBeLessThan(3000);
 
-    // eslint-disable-next-line no-console
     console.log(`⚡ 页面加载时间: ${loadTime}ms`);
   });
 
