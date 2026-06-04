@@ -63,7 +63,7 @@ test.describe('平板视图 (Tablet)', () => {
 
 // 移动端视图 - Mobile
 test.describe('移动端视图 (Mobile)', () => {
-  test.use({ ...devices['iPhone 12'] });
+  test.use({ viewport: { width: 390, height: 844 }, userAgent: devices['iPhone 12'].userAgent });
 
   test('应该在移动设备上正确显示', async ({ page }) => {
     await page.goto('/');
