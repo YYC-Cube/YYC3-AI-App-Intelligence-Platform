@@ -8,7 +8,6 @@ on:
 
 env:
   NODE_VERSION: "18"
-  PNPM_VERSION: "9"
 
 jobs:
   # Job 1: Code Quality Check
@@ -22,9 +21,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -56,9 +52,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -104,9 +97,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -146,9 +136,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -217,9 +204,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -259,9 +243,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -362,9 +343,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
