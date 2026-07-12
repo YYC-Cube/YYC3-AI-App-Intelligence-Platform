@@ -1,6 +1,6 @@
 # Legacy Components 存档
 
-> 本目录保存 YYC³ AI App Intelligence Platform 项目演进过程中产生的简化版组件 (Legacy / Simple variants)。
+> 本目录保存 YYC³ AI Intelligence Platform 项目演进过程中产生的简化版组件 (Legacy / Simple variants)。
 > 这些组件在当前生产代码中已**无任何引用**，但保留以供：
 >
 > - 历史参考与设计对比（Simple vs Full 实现差异）

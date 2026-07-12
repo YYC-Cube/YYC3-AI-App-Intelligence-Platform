@@ -51,7 +51,7 @@ export function YYCEnterpriseLayoutSimple() {
           <h1 className="text-2xl font-bold text-slate-900 mb-4">
             {activeModule.charAt(0).toUpperCase() + activeModule.slice(1)}
           </h1>
-          <p className="text-slate-600">Welcome to YYC³ AI App Intelligence Platform</p>
+          <p className="text-slate-600">Welcome to YYC³ AI Intelligence Platform</p>
           <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
             <p className="text-sm text-blue-800">
               This is a simplified version for testing. The full enterprise layout will be restored

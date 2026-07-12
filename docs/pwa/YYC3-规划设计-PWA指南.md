@@ -2,7 +2,7 @@
 
 ## 📋 概述
 
-YYC³ AI App Intelligence Platform 已全面实现 **Progressive Web App (PWA)** 能力，提供类原生应用体验、离线支持和自动更新功能。
+YYC³ AI Intelligence Platform 已全面实现 **Progressive Web App (PWA)** 能力，提供类原生应用体验、离线支持和自动更新功能。
 
 ---
 
@@ -49,7 +49,7 @@ VitePWA({
   ],
 
   manifest: {
-    name: 'YYC³ AI App Intelligence Platform',
+    name: 'YYC³ AI Intelligence Platform',
     short_name: 'YYC³ AI',
     display: 'standalone', // 全屏显示
     orientation: 'any', // 支持任意方向
@@ -116,7 +116,7 @@ VitePWA({
 
 ```json
 {
-  "name": "YYC³ AI App Intelligence Platform",
+  "name": "YYC³ AI Intelligence Platform",
   "short_name": "YYC³ AI",
   "description": "Enterprise-grade analytics and intelligence platform...",
   "theme_color": "#0C70F2",

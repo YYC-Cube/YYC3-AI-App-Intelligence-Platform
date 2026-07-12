@@ -1,4 +1,4 @@
-# YYC³ AI App Intelligence Platform — Documentation Hub
+# YYC³ AI Intelligence Platform — Documentation Hub
 
 > 项目文档中枢 · 按**功能领域**分类组织的可发现知识库
 

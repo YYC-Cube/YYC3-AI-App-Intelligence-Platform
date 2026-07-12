@@ -1,6 +1,6 @@
 ---
 file: YYC3-代码审核-全局审核报告.md
-description: YYC³ AI App Intelligence Platform 代码语法及功能闭环全局审核报告 — 覆盖技术架构、代码质量、功能完整性、DevOps、性能安全、业务价值六大评估维度
+description: YYC³ AI Intelligence Platform 代码语法及功能闭环全局审核报告 — 覆盖技术架构、代码质量、功能完整性、DevOps、性能安全、业务价值六大评估维度
 author: YanYuCloudCube Team <admin@0379.email>
 version: v1.0.0
 created: 2026-04-21
@@ -21,9 +21,9 @@ complexity: advanced
 
 ---
 
-# YYC³ AI App Intelligence Platform — 代码语法及功能闭环全局审核报告
+# YYC³ AI Intelligence Platform — 代码语法及功能闭环全局审核报告
 
-**审核项目**: yyc3-ai-app-intelligence-platform
+**审核项目**: yyc3-ai-intelligence-platform
 **审核日期**: 2026-04-21
 **审核版本**: v1.0.0
 **审核性质**: 五高五标五化五维全维度标准合规审核
@@ -363,7 +363,7 @@ complexity: advanced
 | #   | 项目                 | 说明                                                                        |
 | --- | -------------------- | --------------------------------------------------------------------------- |
 | P1  | **端口规范**         | `vite.config.ts` 使用 `--port 3200`，符合 YYC³ 3200-3500 范围               |
-| P2  | **项目命名**         | `yyc3-ai-app-intelligence-platform` 符合 kebab-case 规范                    |
+| P2  | **项目命名**         | `yyc3-ai-intelligence-platform` 符合 kebab-case 规范                        |
 | P3  | **CI/CD 完备**       | `.github/workflows/ci-cd.yml` 含代码质量、单元测试、构建验证三阶段 Pipeline |
 | P4  | **类型定义集中管理** | `types/index.ts` 有完整 JSDoc 注释和 `@fileoverview` 头                     |
 | P5  | **错误边界**         | 全局 `ErrorBoundary` + Sentry 预留接口                                      |

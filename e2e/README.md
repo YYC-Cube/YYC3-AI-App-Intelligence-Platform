@@ -2,7 +2,7 @@
 
 ## 📋 概述
 
-YYC³ AI App Intelligence Platform 的端到端(E2E)测试套件，使用 **Playwright** 测试框架实现。
+YYC³ AI Intelligence Platform 的端到端(E2E)测试套件，使用 **Playwright** 测试框架实现。
 
 ### 覆盖范围
 

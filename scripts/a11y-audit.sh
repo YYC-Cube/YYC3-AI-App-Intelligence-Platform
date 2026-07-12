@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Accessibility Audit Script
-# YYC³ AI App Intelligence Platform
+# YYC³ AI Intelligence Platform
 
 set -e
 
@@ -37,7 +37,7 @@ cat > "${OUTPUT_DIR}/summary_${TIMESTAMP}.md" << EOF
 # Accessibility Audit Report
 
 **Generated:** $(date)
-**Platform:** YYC³ AI App Intelligence Platform
+**Platform:** YYC³ AI Intelligence Platform
 **Target URL:** $URL
 
 ## 🎯 WCAG 2.1 AA Compliance Status

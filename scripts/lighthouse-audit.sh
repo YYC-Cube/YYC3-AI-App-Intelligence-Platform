@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Lighthouse Performance Audit Script
-# YYC³ AI App Intelligence Platform
+# YYC³ AI Intelligence Platform
 
 set -e
 
@@ -66,7 +66,7 @@ cat > "${OUTPUT_DIR}/summary_${TIMESTAMP}.md" << EOF
 # Lighthouse Performance Audit Report
 
 **Generated:** $(date)
-**Platform:** YYC³ AI App Intelligence Platform
+**Platform:** YYC³ AI Intelligence Platform
 **Environment:** Development (port $PORT)
 
 ## 🎯 Core Web Vitals Targets

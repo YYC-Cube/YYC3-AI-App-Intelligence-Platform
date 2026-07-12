@@ -1,7 +1,7 @@
 # 🤝 YYC³ 贡献指南 · Contributing Guide
 
 > _言启千行代码 · 语枢万物智能_
-> 欢迎并感谢您对 **YYC³ AI App Intelligence Platform** 的贡献！本文档定义了参与协作的统一标准。
+> 欢迎并感谢您对 **YYC³ AI Intelligence Platform** 的贡献！本文档定义了参与协作的统一标准。
 
 ---
 

@@ -1,6 +1,6 @@
 # Lighthouse CI Performance Baseline Configuration
 
-# YYC³ AI App Intelligence Platform
+# YYC³ AI Intelligence Platform
 
 version: 1.0
 lastUpdated: 2026-04-20

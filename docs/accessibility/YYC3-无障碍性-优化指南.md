@@ -2,7 +2,7 @@
 
 ## 📋 概述
 
-YYC³ AI App Intelligence Platform 已建立完整的企业级无障碍(a11y)体系，符合 **WCAG 2.1 AA** 标准。本系统确保应用对所有用户（包括使用辅助技术的用户）都可访问。
+YYC³ AI Intelligence Platform 已建立完整的企业级无障碍(a11y)体系，符合 **WCAG 2.1 AA** 标准。本系统确保应用对所有用户（包括使用辅助技术的用户）都可访问。
 
 ---
 

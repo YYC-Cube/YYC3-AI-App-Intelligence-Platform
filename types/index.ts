@@ -1,5 +1,5 @@
 /**
- * @fileoverview YYC³ AI App Intelligence Platform - Core Type Definitions
+ * @fileoverview YYC³ AI Intelligence Platform - Core Type Definitions
  * @description Centralized type definitions for the entire application.
  *              This file serves as the single source of truth for all TypeScript
  *              interfaces and types used across the project.

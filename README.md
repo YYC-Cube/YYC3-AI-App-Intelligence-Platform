@@ -3,7 +3,7 @@
     <source media="(prefers-color-scheme: dark)" srcset="./public/Family-001.png">
     <img
       src="./public/Family-001.png"
-      alt="YYC³ Family — YYC³ AI App Intelligence Platform"
+      alt="YYC³ Family — YYC³ AI Intelligence Platform"
       title="YYC³ Family · YanYuCloudCube"
       width="100%"
       loading="eager"
@@ -19,7 +19,7 @@
 <h1 align="center">
   <a href="https://neuxs-ai.yyc3.top" target="_blank" rel="noopener noreferrer">
     <img src="./public/yyc3-icons/favicon/favicon-96x96.png" width="32" height="32" alt="YYC³ Logo" style="vertical-align: middle; margin-right: 8px; border-radius: 6px;" />
-    YYC³ AI App Intelligence Platform
+    YYC³ AI Intelligence Platform
   </a>
 </h1>
 
@@ -159,9 +159,9 @@
 
 ## 📐 Project Overview · 项目定位
 
-YYC³ AI App Intelligence Platform（`YYC³-aiapp`）是 **YYC³ Family** 旗下的核心 Web 应用层，构建移动应用市场的「**洞察 → 决策 → 执行 → 反馈**」全链路智能闭环。
+YYC³ AI Intelligence Platform 是 **YYC³ Family** 旗下的核心 Web 应用层，构建移动应用市场的「**洞察 → 决策 → 执行 → 反馈**」全链路智能闭环。
 
-> **English**: YYC³ AI App Intelligence Platform (`YYC³-aiapp`) is the flagship web application layer of **YYC³ Family**, building the **Insight → Decision → Execution → Feedback** full-loop intelligent closed loop for the mobile app ecosystem.
+> **English**: YYC³ AI Intelligence Platform (`YYC³-aiapp`) is the flagship web application layer of **YYC³ Family**, building the **Insight → Decision → Execution → Feedback** full-loop intelligent closed loop for the mobile app ecosystem.
 
 | Dimension · 维度            | Description · 描述                                                                                                                                    |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |

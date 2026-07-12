@@ -1,7 +1,7 @@
 {
-  "name": "yyc3-ai-app-intelligence-platform",
+  "name": "yyc3-ai-intelligence-platform",
   "version": "1.0.0",
-  "description": "YYC³ AI App Intelligence Platform - Enterprise-grade analytics and intelligence platform for mobile app developers",
+  "description": "YYC³ AI Intelligence Platform - Enterprise-grade analytics and intelligence platform for mobile app developers",
   "type": "module",
   "scripts": {
     "dev": "vite --port 3200",

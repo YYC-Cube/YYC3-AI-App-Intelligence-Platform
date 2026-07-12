@@ -19,7 +19,7 @@ export default defineConfig({
         'yyc3-icons/favicon/*.ico',
       ],
       manifest: {
-        name: 'YYC³ AI App Intelligence Platform',
+        name: 'YYC³ AI Intelligence Platform',
         short_name: 'YYC³ AI',
         description:
           'Enterprise-grade analytics and intelligence platform for mobile app developers - AI-powered insights for App Store Optimization, market intelligence, and competitive analysis',

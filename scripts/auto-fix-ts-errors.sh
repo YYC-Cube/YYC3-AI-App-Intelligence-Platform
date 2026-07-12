@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TypeScript Error Auto-Fix Script
-# YYC³ AI App Intelligence Platform
+# YYC³ AI Intelligence Platform
 
 set -e
 

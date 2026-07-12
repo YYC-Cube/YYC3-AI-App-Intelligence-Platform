@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Bundle Analysis Script for YYC³ AI App Intelligence Platform
+# Bundle Analysis Script for YYC³ AI Intelligence Platform
 # Analyzes build output and generates performance report
 
 set -e
@@ -31,7 +31,7 @@ cat > "$REPORT_FILE" << EOF
 # 📊 Bundle Analysis Report
 
 **Generated**: $(date)  
-**Project**: YYC³ AI App Intelligence Platform  
+**Project**: YYC³ AI Intelligence Platform  
 **Build**: Production
 
 ---

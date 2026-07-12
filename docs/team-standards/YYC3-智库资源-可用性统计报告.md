@@ -1,6 +1,6 @@
 ---
 file: YYC3-智库资源-可用性统计报告.md
-description: YYC³ 开发智库可用资源检索与统计 — 与 AI App Intelligence Platform 当前项目需求对齐分析
+description: YYC³ 开发智库可用资源检索与统计 — 与 AI Intelligence Platform 当前项目需求对齐分析
 author: YanYuCloudCube Team <admin@0379.email>
 version: v1.0.0
 created: 2026-04-22
@@ -25,7 +25,7 @@ complexity: intermediate
 
 **智库路径**: `/Volumes/www/开发智库`
 **检索日期**: 2026-04-22
-**关联项目**: yyc3-ai-app-intelligence-platform
+**关联项目**: yyc3-ai-intelligence-platform
 **检索范围**: 全量一级/二级目录 + README 分析
 
 ---

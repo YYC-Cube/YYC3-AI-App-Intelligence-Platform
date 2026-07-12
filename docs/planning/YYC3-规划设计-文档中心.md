@@ -1,4 +1,4 @@
-# 📚 YYC³ AI App Intelligence Platform - 文档中心
+# 📚 YYC³ AI Intelligence Platform - 文档中心
 
 **最后更新**: 2025年4月17日  
 **文档版本**: v1.0  
@@ -8,7 +8,7 @@
 
 ## 🎯 文档中心说明
 
-本文档中心包含 **YYC³ AI App Intelligence Platform** 项目的所有技术文档、审查报告、改进规划和阶段总结。
+本文档中心包含 **YYC³ AI Intelligence Platform** 项目的所有技术文档、审查报告、改进规划和阶段总结。
 
 ### 文档组织结构
 

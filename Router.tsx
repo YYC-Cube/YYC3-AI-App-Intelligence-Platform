@@ -1,5 +1,5 @@
 /**
- * @fileoverview YYC³ AI App Intelligence Platform - Route Configuration
+ * @fileoverview YYC³ AI Intelligence Platform - Route Configuration
  * @description Centralized routing with lazy-loaded modules and enterprise/client splits
  * @audit-fix [C1-FIX] — Route system restructuring for full URL reachability
  * @audit-phase P0

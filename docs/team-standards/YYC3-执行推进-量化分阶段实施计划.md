@@ -1,6 +1,6 @@
 ---
 file: YYC3-执行推进-量化分阶段实施计划.md
-description: YYC³ AI App Intelligence Platform 量化分阶段执行推进计划 — 基于 YYC3-代码审核-全局审核报告 的闭环实施路线图，含阶段节点、量化指标与同步标注
+description: YYC³ AI Intelligence Platform 量化分阶段执行推进计划 — 基于 YYC3-代码审核-全局审核报告 的闭环实施路线图，含阶段节点、量化指标与同步标注
 author: YanYuCloudCube Team <admin@0379.email>
 version: v1.0.0
 created: 2026-04-21

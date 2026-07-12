@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # PWA Audit Script
-# YYC³ AI App Intelligence Platform
+# YYC³ AI Intelligence Platform
 
 set -e
 
@@ -29,7 +29,7 @@ cat > "${OUTPUT_DIR}/pwa-audit-${TIMESTAMP}.md" << EOF
 # PWA Audit Report
 
 **Generated:** $(date)
-**Platform:** YYC³ AI App Intelligence Platform
+**Platform:** YYC³ AI Intelligence Platform
 **Target URL:** $URL
 
 ## 🎯 PWA Compliance Checklist
@@ -80,7 +80,7 @@ cat > "${OUTPUT_DIR}/pwa-audit-${TIMESTAMP}.md" << EOF
 
 \`\`\`json
 {
-  "name": "YYC³ AI App Intelligence Platform",
+  "name": "YYC³ AI Intelligence Platform",
   "short_name": "YYC³ AI",
   "display": "standalone",
   "orientation": "any",

@@ -513,3 +513,15 @@ html {
   background-color: rgba(59, 130, 246, 0.2);
   color: inherit;
 }
+
+/* ============================================================
+ * AI Assistant - hide-scrollbar utilities
+ * ============================================================ */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

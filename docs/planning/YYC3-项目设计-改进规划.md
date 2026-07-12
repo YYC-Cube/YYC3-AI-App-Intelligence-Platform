@@ -1,4 +1,4 @@
-# 🚀 YYC³ AI App Intelligence Platform - 项目改进规划
+# 🚀 YYC³ AI Intelligence Platform - 项目改进规划
 
 **文档编号**: YYC3-IP-20250417-001  
 **创建日期**: 2025年4月17日  

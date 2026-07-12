@@ -2,7 +2,7 @@
 
 ## 📋 概述
 
-YYC³ AI App Intelligence Platform 已集成 **Google Lighthouse CI** 用于自动化性能审计。本配置确保每次代码提交都能自动检测性能回归，并维持企业级应用的高性能标准。
+YYC³ AI Intelligence Platform 已集成 **Google Lighthouse CI** 用于自动化性能审计。本配置确保每次代码提交都能自动检测性能回归，并维持企业级应用的高性能标准。
 
 ---
 
