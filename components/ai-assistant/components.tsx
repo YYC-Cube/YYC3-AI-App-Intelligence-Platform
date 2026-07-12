@@ -4,7 +4,7 @@
  * @version 1.0.0
  * @author YYC³ Team
  */
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 // ============================================================
 // YYCLogo - YYC³ 脑波 SVG 图标
@@ -66,6 +66,27 @@ export function EmotionRipple({ color, active }: { color: string; active: boolea
 // useSpeechRecognition - Web Speech API 语音识别 Hook
 // ============================================================
 
+// Minimal Web Speech API type declarations
+interface SpeechRecognitionEvent {
+  results: { [index: number]: { [index: number]: { transcript: string } } };
+}
+
+interface SpeechRecognitionConstructor {
+  new (): SpeechRecognitionInstance;
+}
+
+interface SpeechRecognitionInstance {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  onresult: (event: SpeechRecognitionEvent) => void;
+  onerror: () => void;
+  onend: () => void;
+  start: () => void;
+  stop: () => void;
+  abort: () => void;
+}
+
 export function useSpeechRecognition() {
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState('');
@@ -74,19 +95,24 @@ export function useSpeechRecognition() {
       typeof window !== 'undefined' &&
       ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)
   );
-  const recognitionRef = useRef<any>(null);
+  const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
   const startListening = useCallback(() => {
     if (!supported) {
       return;
     }
     const Recognition =
-      (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
+      (window as unknown as { webkitSpeechRecognition?: SpeechRecognitionConstructor })
+        .webkitSpeechRecognition ||
+      (window as unknown as { SpeechRecognition?: SpeechRecognitionConstructor }).SpeechRecognition;
+    if (!Recognition) {
+      return;
+    }
     const recog = new Recognition();
     recog.lang = 'zh-CN';
     recog.continuous = false;
     recog.interimResults = false;
-    recog.onresult = (event: any) => {
+    recog.onresult = (event: SpeechRecognitionEvent) => {
       setTranscript(event.results[0][0].transcript);
       setIsListening(false);
     };

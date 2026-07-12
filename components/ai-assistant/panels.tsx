@@ -108,10 +108,10 @@ export function ChatPanel(p: PanelProps) {
     if (transcript) {
       p.setInputValue(transcript);
     }
-  }, [transcript]);
+  }, [transcript, p]);
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [p.messages, p.isTyping]);
+  }, [p.messages, p.isTyping, p]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
